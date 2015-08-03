@@ -24,6 +24,8 @@
 		ABC406571B6BFAAD00155C58 /* electron.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC406561B6BFAAD00155C58 /* electron.png */; };
 		ABC406591B6C059200155C58 /* ElectronCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC406581B6C059200155C58 /* ElectronCloud.swift */; };
 		ABC4065B1B6C1E4800155C58 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4065A1B6C1E4800155C58 /* Pool.swift */; };
+		ABC5D9001B7016F6000DE8E8 /* ElectronUncertainty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */; };
+		ABC5D9021B7017BC000DE8E8 /* glow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC5D9011B7017BC000DE8E8 /* glow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		ABC406561B6BFAAD00155C58 /* electron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electron.png; sourceTree = "<group>"; };
 		ABC406581B6C059200155C58 /* ElectronCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectronCloud.swift; sourceTree = "<group>"; };
 		ABC4065A1B6C1E4800155C58 /* Pool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectronUncertainty.swift; sourceTree = "<group>"; };
+		ABC5D9011B7017BC000DE8E8 /* glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				ABC4061F1B6BD2EB00155C58 /* GameViewController.swift */,
 				ABC4061D1B6BD2EB00155C58 /* GameScene.swift */,
 				ABC4064F1B6BD34D00155C58 /* Atom.swift */,
+				ABC5D9011B7017BC000DE8E8 /* glow.png */,
+				ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */,
 				ABC4065A1B6C1E4800155C58 /* Pool.swift */,
 				ABC406531B6BF96100155C58 /* Electron.swift */,
 				ABC406581B6C059200155C58 /* ElectronCloud.swift */,
@@ -259,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC5D9021B7017BC000DE8E8 /* glow.png in Resources */,
 				ABC4061C1B6BD2EB00155C58 /* GameScene.sks in Resources */,
 				ABC406571B6BFAAD00155C58 /* electron.png in Resources */,
 				ABC406281B6BD2EB00155C58 /* LaunchScreen.storyboard in Resources */,
@@ -295,6 +302,7 @@
 				ABC406521B6BD35800155C58 /* Atom Playground.swift in Sources */,
 				ABC406501B6BD34D00155C58 /* Atom.swift in Sources */,
 				ABC4061A1B6BD2EB00155C58 /* AppDelegate.swift in Sources */,
+				ABC5D9001B7016F6000DE8E8 /* ElectronUncertainty.swift in Sources */,
 				ABC4065B1B6C1E4800155C58 /* Pool.swift in Sources */,
 				ABC406541B6BF96100155C58 /* Electron.swift in Sources */,
 				ABC4064E1B6BD33700155C58 /* Nuclei.swift in Sources */,
@@ -528,6 +536,7 @@
 				ABC406441B6BD2EC00155C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC406451B6BD2EC00155C58 /* Build configuration list for PBXNativeTarget "atomsTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +545,7 @@
 				ABC406471B6BD2EC00155C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC406481B6BD2EC00155C58 /* Build configuration list for PBXNativeTarget "atomsUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +554,7 @@
 				ABC4064A1B6BD2EC00155C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
