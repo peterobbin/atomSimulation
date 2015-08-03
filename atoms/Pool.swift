@@ -17,16 +17,20 @@ class Pool {
     
     func setup(){
         cosmos.position = CGPointZero
+        cosmos.name = "cosmos"
    
 
     }
     
-    func getTouch(touchLoc:CGPoint){
+    func getTouch(touchLoc:CGPoint, _creatNew:Bool){
         let location = touchLoc
-        mAtoms.append(Atom(_initPoint: location))
+        if _creatNew{
+            mAtoms.append(Atom(_initPoint: location))
+        }
        
         
     }
+    
     
     func update(){
         for a in mAtoms{

@@ -16,6 +16,8 @@ class ElectronCloud {
     
     func setup(_pos:CGPoint){
         cloud.position = _pos
+        cloud.name = "cloud"
+        cloud.zPosition = -2
         
         for _ in 1...numElctron{
             mElctron.append(Electron())

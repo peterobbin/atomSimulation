@@ -29,16 +29,19 @@ class Atom {
         atom.addChild(mCloud.cloud)
         mNuclei.setup(CGPointZero)
         mCloud.setup(CGPointZero)
+        atom.name = "atom"
+        atom.zPosition = 2
         atom.position = initPoint
         atom.xScale = scale
         atom.yScale = atom.xScale
+        atom.physicsBody = SKPhysicsBody(circleOfRadius: mNuclei.centerNuclei.frame.size.width/2)
+        
+       
    
             
     }
     
-    func locationUpdate(){
-        
-    }
+
     
     func update(){
         mCloud.update()
