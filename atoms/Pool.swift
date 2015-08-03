@@ -30,12 +30,19 @@ class Pool {
     
     func update(){
         for a in mAtoms{
+            //  do the setup for an atom
             if a.notConfigured{
                cosmos.addChild(a.atom)
                a.setup(false)
             }
-            print(a.atom.children.count)
             a.update()
+        }
+        
+        
+        if mAtoms.count > 10 {
+            mAtoms[0].atom.removeFromParent()
+            mAtoms.removeAtIndex(0)
+            
         }
         
     

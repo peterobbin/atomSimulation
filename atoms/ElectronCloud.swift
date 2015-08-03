@@ -18,7 +18,6 @@ class ElectronCloud {
         cloud.position = _pos
         
         for _ in 1...numElctron{
-            print("new")
             mElctron.append(Electron())
         }
         
