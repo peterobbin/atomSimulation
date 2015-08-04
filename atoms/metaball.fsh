@@ -11,6 +11,8 @@ void main(void) {
     
     if (color.x > 0.6 ) {
         color.xyz = vec3(0.2, 0.2, 0.5);
+        //color.xyz = vec3(0.0);
+        
     }else{
         float c = pow(color.x , 4.0);
         //color.xyz = vec3(pow(color.x , 8.0), pow(color.x , 8.0), pow(color.x * 1.5, 12.0)) ;
