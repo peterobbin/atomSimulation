@@ -12,7 +12,8 @@ import SpriteKit
 class ElectronCloud {
     let cloud = SKNode()
     var mElctron = [Electron]()
-    var numElctron = 3
+    var numElctron = Int()
+    var osciMax:CGFloat = 0.0
     
     func setup(_pos:CGPoint){
         cloud.position = _pos
@@ -27,6 +28,7 @@ class ElectronCloud {
         
         for e in mElctron {
             let osciScale = random(50, max: 200)
+            if osciMax < osciScale { osciMax = osciScale}
             cloud.addChild(e.etron)
             e.setup(CGPointZero, _osciScale: osciScale)
         }

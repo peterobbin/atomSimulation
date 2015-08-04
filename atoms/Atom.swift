@@ -17,6 +17,7 @@ class Atom {
     var initPoint:CGPoint
     var notConfigured = true
     var scale:CGFloat = 0.5
+    var cloudScale = CGFloat()
     
     init(_initPoint:CGPoint){
         self.initPoint = _initPoint
@@ -50,6 +51,7 @@ class Atom {
     
     func update(){
         mCloud.update()
+        cloudScale = mCloud.osciMax * 0.005
     }
     
    

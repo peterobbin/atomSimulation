@@ -64,6 +64,9 @@ class Pool {
         
         for (var i:Int = 0 ; i < mBalls.count; i++){
             metaballEffect.children[i].position = mAtoms[i].atom.position
+            metaballEffect.children[i].xScale = mAtoms[i].cloudScale
+            metaballEffect.children[i].yScale = mAtoms[i].cloudScale
+            
         }
         
         
