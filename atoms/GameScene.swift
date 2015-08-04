@@ -16,8 +16,13 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         self.addChild(pool.cosmos)
+        self.addChild(pool.metaballEffect)
+        pool.setup()
+        pool.metaballEffect.zPosition = -3
         self.backgroundColor = SKColor.blackColor()
         self.physicsWorld.gravity = CGVectorMake(0, 0)
+    
+    
         
         
         
@@ -30,9 +35,9 @@ class GameScene: SKScene {
             let touchedNode = nodeAtPoint(location)
             print(touchedNode)
            
-            if self.frame.contains(location) && touchedNode.name == "atom"{
-                touchedNode.position = location
-            }
+//            if self.frame.contains(location) && touchedNode.name == "atom"{
+//                touchedNode.position = location
+//            }
             
             if touchedNode.name == nil{
                 pool.getTouch(location, _creatNew: true)

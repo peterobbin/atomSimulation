@@ -26,6 +26,7 @@
 		ABC4065B1B6C1E4800155C58 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4065A1B6C1E4800155C58 /* Pool.swift */; };
 		ABC5D9001B7016F6000DE8E8 /* ElectronUncertainty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */; };
 		ABC5D9021B7017BC000DE8E8 /* glow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC5D9011B7017BC000DE8E8 /* glow.png */; };
+		ABF8D0061B7119C500CDC34B /* metaball.fsh in Resources */ = {isa = PBXBuildFile; fileRef = ABF8D0051B7119C500CDC34B /* metaball.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		ABC4065A1B6C1E4800155C58 /* Pool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
 		ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectronUncertainty.swift; sourceTree = "<group>"; };
 		ABC5D9011B7017BC000DE8E8 /* glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow.png; sourceTree = "<group>"; };
+		ABF8D0051B7119C500CDC34B /* metaball.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = metaball.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				ABC4061B1B6BD2EB00155C58 /* GameScene.sks */,
 				ABC4061F1B6BD2EB00155C58 /* GameViewController.swift */,
 				ABC4061D1B6BD2EB00155C58 /* GameScene.swift */,
+				ABF8D0051B7119C500CDC34B /* metaball.fsh */,
 				ABC4064F1B6BD34D00155C58 /* Atom.swift */,
 				ABC5D9011B7017BC000DE8E8 /* glow.png */,
 				ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */,
@@ -269,6 +272,7 @@
 				ABC4061C1B6BD2EB00155C58 /* GameScene.sks in Resources */,
 				ABC406571B6BFAAD00155C58 /* electron.png in Resources */,
 				ABC406281B6BD2EB00155C58 /* LaunchScreen.storyboard in Resources */,
+				ABF8D0061B7119C500CDC34B /* metaball.fsh in Resources */,
 				ABC406251B6BD2EB00155C58 /* Assets.xcassets in Resources */,
 				ABC406231B6BD2EB00155C58 /* Main.storyboard in Resources */,
 				ABC4064C1B6BD31E00155C58 /* nuclei.png in Resources */,

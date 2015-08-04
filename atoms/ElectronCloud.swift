@@ -12,13 +12,15 @@ import SpriteKit
 class ElectronCloud {
     let cloud = SKNode()
     var mElctron = [Electron]()
-    let numElctron = 3
+    var numElctron = 3
     
     func setup(_pos:CGPoint){
         cloud.position = _pos
         cloud.name = "cloud"
         cloud.zPosition = -2
         
+        
+        numElctron = Int(random(1, max: 5))
         for _ in 1...numElctron{
             mElctron.append(Electron())
         }
