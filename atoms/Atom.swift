@@ -22,9 +22,7 @@ class Atom {
     init(_initPoint:CGPoint){
         self.initPoint = _initPoint
     }
-    
-    
-    
+   
     func setup(_notConfigured:Bool){
         self.notConfigured = _notConfigured
         atom.addChild(mNuclei.centerNuclei)
@@ -41,17 +39,11 @@ class Atom {
         atom.physicsBody = SKPhysicsBody(circleOfRadius: 25)
         atom.physicsBody?.linearDamping = 0.5
         atom.physicsBody?.mass = 500
-        
-       
-   
-            
     }
-    
 
-    
     func update(){
         mCloud.update()
-        cloudScale = mCloud.osciMax * 0.005
+        cloudScale = mCloud.osciMax * 0.007
     }
     
    

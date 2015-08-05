@@ -27,7 +27,7 @@ class ElectronCloud {
         }
         
         for e in mElctron {
-            let osciScale = random(50, max: 200)
+            let osciScale = random(50, max: 150)
             if osciMax < osciScale { osciMax = osciScale}
             cloud.addChild(e.etron)
             e.setup(CGPointZero, _osciScale: osciScale)
