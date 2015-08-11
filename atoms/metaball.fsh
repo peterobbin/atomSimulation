@@ -22,9 +22,9 @@ void main(void) {
         //color.xyz = vec3(0.0);
         
         // create rings
-        if (dist > 0.9) {
+        if (dist > 0.92) {
             color.xyz =vec3(0.6, 0.6, 0.3);
-        }else if (dist > 0.7){
+        }else if (dist > 0.75){
             color.xyz = vec3(0.0);
         }else if (dist > 0.65){
             color.xyz =vec3(a);
