@@ -134,10 +134,8 @@
 				ABC406531B6BF96100155C58 /* Electron.swift */,
 				ABC406581B6C059200155C58 /* ElectronCloud.swift */,
 				ABC4064D1B6BD33700155C58 /* Nuclei.swift */,
-				ABC5D9011B7017BC000DE8E8 /* glow.png */,
-				ABC406561B6BFAAD00155C58 /* electron.png */,
-				ABC4064B1B6BD31D00155C58 /* nuclei.png */,
 				ABC406511B6BD35800155C58 /* Atom Playground.swift */,
+				ABFBFAAF1B7A78CF00DEEECE /* resources */,
 				ABC406211B6BD2EB00155C58 /* Main.storyboard */,
 				ABC406241B6BD2EB00155C58 /* Assets.xcassets */,
 				ABC406261B6BD2EB00155C58 /* LaunchScreen.storyboard */,
@@ -162,6 +160,16 @@
 				ABC4063F1B6BD2EC00155C58 /* Info.plist */,
 			);
 			path = atomsUITests;
+			sourceTree = "<group>";
+		};
+		ABFBFAAF1B7A78CF00DEEECE /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABC5D9011B7017BC000DE8E8 /* glow.png */,
+				ABC406561B6BFAAD00155C58 /* electron.png */,
+				ABC4064B1B6BD31D00155C58 /* nuclei.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

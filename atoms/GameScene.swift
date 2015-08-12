@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene {
     let pool = Pool()
+    var windowSize = CGSize()
 
     
     
@@ -21,11 +22,9 @@ class GameScene: SKScene {
         pool.metaballEffect.zPosition = -3
         self.backgroundColor = SKColor.blackColor()
         self.physicsWorld.gravity = CGVectorMake(0, 0)
-    
-    
-        
-        
-        
+        windowSize = self.frame.size
+
+       
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -34,10 +33,7 @@ class GameScene: SKScene {
             let location = touch.locationInNode(self)
             let touchedNode = nodeAtPoint(location)
             print(touchedNode)
-           
-//            if self.frame.contains(location) && touchedNode.name == "atom"{
-//                touchedNode.position = location
-//            }
+
             
             if touchedNode.name == nil{
                 pool.getTouch(location, _creatNew: true)
@@ -50,6 +46,8 @@ class GameScene: SKScene {
         
     }
     
+    
+    
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         for touch in touches{
             let location = touch.locationInNode(self)
@@ -59,15 +57,12 @@ class GameScene: SKScene {
                 let vel = CGVector(dx: (location.x - touchedNode.position.x) * 5.0, dy: (location.y - touchedNode.position.y) * 5.0 )
                 touchedNode.physicsBody?.velocity = vel
             }
-            
-
-            
-            
+    
         }
     }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-        pool.update()
+        pool.update(self.physicsWorld, _windowSize: self.frame.size)
     }
 }
