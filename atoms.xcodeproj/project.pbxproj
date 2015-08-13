@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB917AAE1B7D343800E06B1C /* blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB917AAD1B7D343800E06B1C /* blur.fsh */; };
 		ABB6D53E1B7BDB8500B0AAD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB6D53D1B7BDB8500B0AAD1 /* Default-568h@2x.png */; };
+		ABB6D5401B7BDBDF00B0AAD1 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB6D53F1B7BDBDE00B0AAD1 /* Line.swift */; };
 		ABC4061A1B6BD2EB00155C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC406191B6BD2EB00155C58 /* AppDelegate.swift */; };
 		ABC4061C1B6BD2EB00155C58 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ABC4061B1B6BD2EB00155C58 /* GameScene.sks */; };
 		ABC4061E1B6BD2EB00155C58 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4061D1B6BD2EB00155C58 /* GameScene.swift */; };
@@ -48,7 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB917AAD1B7D343800E06B1C /* blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = blur.fsh; sourceTree = "<group>"; };
 		ABB6D53D1B7BDB8500B0AAD1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ABB6D53F1B7BDBDE00B0AAD1 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		ABC406161B6BD2EB00155C58 /* atoms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atoms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC406191B6BD2EB00155C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC4061B1B6BD2EB00155C58 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -138,10 +142,12 @@
 				ABC4061B1B6BD2EB00155C58 /* GameScene.sks */,
 				ABC4061F1B6BD2EB00155C58 /* GameViewController.swift */,
 				ABC4061D1B6BD2EB00155C58 /* GameScene.swift */,
+				ABB6D53F1B7BDBDE00B0AAD1 /* Line.swift */,
 				ABC4064F1B6BD34D00155C58 /* Atom.swift */,
 				ABC5D8FF1B7016F6000DE8E8 /* ElectronUncertainty.swift */,
 				ABC4065A1B6C1E4800155C58 /* Pool.swift */,
 				ABC406531B6BF96100155C58 /* Electron.swift */,
+				AB917AAD1B7D343800E06B1C /* blur.fsh */,
 				ABC406581B6C059200155C58 /* ElectronCloud.swift */,
 				ABC4064D1B6BD33700155C58 /* Nuclei.swift */,
 				ABC406511B6BD35800155C58 /* Atom Playground.swift */,
@@ -295,6 +301,7 @@
 				ABF8D0061B7119C500CDC34B /* metaball.fsh in Resources */,
 				ABC406251B6BD2EB00155C58 /* Assets.xcassets in Resources */,
 				ABC406231B6BD2EB00155C58 /* Main.storyboard in Resources */,
+				AB917AAE1B7D343800E06B1C /* blur.fsh in Resources */,
 				ABC4064C1B6BD31E00155C58 /* nuclei.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +336,7 @@
 				ABC5D9001B7016F6000DE8E8 /* ElectronUncertainty.swift in Sources */,
 				ABC4065B1B6C1E4800155C58 /* Pool.swift in Sources */,
 				ABC406541B6BF96100155C58 /* Electron.swift in Sources */,
+				ABB6D5401B7BDBDF00B0AAD1 /* Line.swift in Sources */,
 				ABC4064E1B6BD33700155C58 /* Nuclei.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

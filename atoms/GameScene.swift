@@ -13,17 +13,17 @@ class GameScene: SKScene {
     var windowSize = CGSize()
 
     
-    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         self.addChild(pool.cosmos)
         self.addChild(pool.metaballEffect)
+        self.addChild(pool.lines)
         pool.setup()
         pool.metaballEffect.zPosition = -3
         self.backgroundColor = SKColor.blackColor()
         self.physicsWorld.gravity = CGVectorMake(0, 0)
         windowSize = self.frame.size
-
+        
        
     }
     
@@ -33,6 +33,8 @@ class GameScene: SKScene {
             let location = touch.locationInNode(self)
             let touchedNode = nodeAtPoint(location)
             print(touchedNode)
+            
+         
 
             
             if touchedNode.name == nil{
@@ -41,9 +43,7 @@ class GameScene: SKScene {
                 pool.getTouch(location, _creatNew: false)
 
             }
-            
         }
-        
     }
     
     
@@ -57,12 +57,16 @@ class GameScene: SKScene {
                 let vel = CGVector(dx: (location.x - touchedNode.position.x) * 5.0, dy: (location.y - touchedNode.position.y) * 5.0 )
                 touchedNode.physicsBody?.velocity = vel
             }
-    
         }
     }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
         pool.update(self.physicsWorld, _windowSize: self.frame.size)
+        
+        
+
+             
+        
     }
 }
